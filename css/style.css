@@ -1,0 +1,68 @@
+@font-face {
+    font-family: norwester;
+    src: url(../fonts/norwester.woff);
+    font-weight:400;
+}
+
+body {
+    font-family: norwester, georgia, serif;
+    font-size: 40px;
+}
+
+code {
+    font-size: 20px;
+}
+
+/*
+ * Colors:
+ * #D3E6F7;
+ * #1A292B;
+ * #C2624A;
+ * #AAACAD;
+ * #C2624A;
+ */
+
+.remark-container {
+    background-color: #D3E6F7;
+}
+.remark-slide-scaler {
+    background-color: #1A292B;
+    color: white;
+    box-shadow: 0 0 30px #000;
+    -webkit-box-shadow: 0 0 30px #000;
+}
+
+.remark-notes {
+    font-family: 'Georgia', serif;
+    font-size: 30px;
+}
+
+.subtle {
+    opacity: 0.25;
+}
+
+.center {
+    text-align: center;
+}
+
+a {
+    color: #aaacad;
+    text-decoration: none;
+}
+
+.demo {
+    width: 100%;
+    height: 50%;
+}
+
+.float-left {
+    float: left;
+}
+.float-right {
+    float: right;
+}
+
+.tiny-font code {
+    font-size: 2px !important;
+    color: black !important;
+}
