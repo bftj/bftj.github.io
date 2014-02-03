@@ -8,15 +8,12 @@ layout: default
         <p><a class="btn btn-lg btn-success" href="slides/" role="button">Slides fra kurset</a></p>
     </div>
 
-    <div class="row">
+<div class="row">
+    {% for guide in site.data.guides %}
         <div class="col-sm-6">
-            <h4>Sette opp git på windows</h4>
-            <p>Ikke så enkelt som man skulle tro?</p>
-            <p><a href="#">Les mer ›</a></p>
+            <h4>{{ guide.title }}</h4>
+            <p>{{ guide.description }}</p>
+            <p><a href="guider/{{ guide.slug }}">Les mer ›</a></p>
         </div>
-        <div class="col-sm-6">
-            <h4>Git & eclipse</h4>
-            <p>Lykke til med å gjøre det <em>uten</em> en guide.</p>
-            <p><a href="#">Les mer ›</a></p>
-        </div>
-    </div>
+    {% endfor %}
+</div>

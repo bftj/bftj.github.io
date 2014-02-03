@@ -1,0 +1,11 @@
+- title: Eclipse-prosjekter i git
+  slug: git-eclipse.html
+  description: Noen fete triks
+
+- title: Git på Windows
+  slug: git-windows.html
+  description: Det enkleste er å installere linux
+
+- title: Commiting
+  slug: commit-kommandoer.html
+  description: add, commit og status

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8"/>
+        <base href="{{ site.baseurl }}">
+        <title>{% if page.title %} {{ page.title }} - {% endif %}{{ site.name }}</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- responsive site -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> <!-- chrome frame -->
+		<meta name="viewport" content="user-scalable=no"> <!-- prevents browser zoom on small devices -->
+        <meta name="description" content="{{ site.description }}">
+        <link rel="stylesheet" href="css/style.css">
+	    <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+	</head>
+	<body>
+
+    <div class=container>
+      {% include header.html %}
+
+      {{ content }}
+
+      <div class="footer" role="contentinfo">
+
+      </div>
+
+    <script>
+		// analytics code
+    </script>	
+	</body>
+</html>
