@@ -9,3 +9,7 @@
 - title: Commiting
   slug: commit-kommandoer.html
   description: add, commit og status
+
+- title: SSH-nøkler
+  slug: ssh-keys.html
+  description: Oppsett for å pulle og pushe fra GitHub
