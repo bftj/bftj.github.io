@@ -5,6 +5,22 @@
     <title>git-kurs</title>
     <style type="text/css">
       /* Slideshow styles */
+      img {
+        width: 100%;
+      }
+
+      .remark-code {
+        width: 100%;
+        font-size: 30px;
+        padding: 0;
+        text-align: justify;
+        text-align-last: right;
+      }
+      .remark-code:before {
+        content:"$  ";
+        margin-left: -50px;
+        color: white;
+      }
     </style>
     <script src=js/remark-0.6.0.min.js></script>
     <link rel=stylesheet type=text/css href=css/style.css />
@@ -33,74 +49,25 @@ class: center, middle
 
 ---
 
-## Lage repository
-
-```
-git init
-```
-
----
-
-## Legge til filer og commit
-
-```
-git add README.md
-git commit
-git log
-```
-
----
-class: center, middle
-
-# Oppgave:
-
-## Lag ditt eget git-repository
-
-???
-
-De jobber alene på denne oppgaven.
-
-Opprette en mappe på disken, hvor de skal skrive git init
-
-Deretter lage en fil i mappa, stage den, og commite den.
-
-Til slutt se på loggen.
-
-Gjenta med endringer i filen, og legge til flere filer til de er komfortable med kommandoene.
-
----
-
 ## Opprette repository på github
 
 [GitHub](https://github.com/new)
 
 ---
-
-## Legge til remote
+class: center
 
 ```
-git remote add git@github.com:poetene/MyFirstRepo.git
+git clone git@github.com:[USERNAME]/[REPONAME].git
 ```
 
 ---
-
-# Push
+class: center
 
 ```
-git push origin master
+git clone git@github.com:[USERNAME]/[REPONAME].git
 ```
----
-class: center, middle
 
-# Oppgave:
-
-## Opprette ditt eget GitHub-repository og pushe kode dit
-
-???
-
-Hvis man ikke har satt opp SSH-nøkler kan vi hjelpe til med det.
-
-Guide på poetene.net/git/
+![](http://i.imgur.com/hD3hFro.png)
 
 ---
 
@@ -113,6 +80,18 @@ Guide på poetene.net/git/
 bin/    # Man kan også ignorere mapper
 .*      # Skjulte filer
 ```
+
+---
+
+# Avansert git
+
+google.com ›
+
+"how to go move commits to another branch" ›
+
+les svaret på stackoverflow.com
+
+---
 
 
     </textarea>
