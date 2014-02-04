@@ -1,11 +1,5 @@
-@font-face {
-    font-family: norwester;
-    src: url(../fonts/norwester.woff);
-    font-weight:400;
-}
-
 body {
-    font-family: norwester, georgia, serif;
+    font-family: georgia, serif;
     font-size: 40px;
 }
 
@@ -26,10 +20,12 @@ code {
     background-color: #D3E6F7;
 }
 .remark-slide-scaler {
-    background-color: #1A292B;
     color: white;
     box-shadow: 0 0 30px #000;
     -webkit-box-shadow: 0 0 30px #000;
+}
+.remark-slide-content {
+    background-color: #1A292B;
 }
 
 .remark-notes {
@@ -43,6 +39,10 @@ code {
 
 .center {
     text-align: center;
+}
+
+h1, h2, h3 {
+    font-weight: normal;
 }
 
 a {
@@ -65,4 +65,13 @@ a {
 .tiny-font code {
     font-size: 2px !important;
     color: black !important;
+}
+.remark-slide-container .remark-slide-content pre code {
+    white-space: pre-wrap;       /* css-3 */
+    white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+    white-space: -pre-wrap;      /* Opera 4-6 */
+    white-space: -o-pre-wrap;    /* Opera 7 */
+    word-wrap: break-word;       /* Internet Explorer 5.5+ */
+    text-indent: -1em;
+    padding-left: 2em;
 }
