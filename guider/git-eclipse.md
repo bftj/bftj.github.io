@@ -9,3 +9,13 @@ Det er i all hovedsak to triks som må til for å få git til å fungere smertef
 ## Oppsett på github
 
 Lag et nytt repository på github.
+
+![Inite et repo](images/init-repo.png)
+
+Kryss av for å initialize med en README-fil, og velg .gitignore-fil for Java.
+
+### Laste ned og sette opp koden
+
+![clone-url](images/clone-url.png)
+
+Kopier clone URL-en.
