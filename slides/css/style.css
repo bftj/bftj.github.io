@@ -66,10 +66,26 @@ a {
     font-size: 2px !important;
     color: black !important;
 }
+
+img {
+    width: 100%;
+}
+
 .remark-slide-container .remark-slide-content pre code {
     white-space: pre-wrap;       /* css-3 */
     white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
     white-space: -pre-wrap;      /* Opera 4-6 */
     white-space: -o-pre-wrap;    /* Opera 7 */
     word-wrap: break-word;       /* Internet Explorer 5.5+ */
+}
+.remark-code {
+    width: 100%;
+    font-size: 30px;
+    padding: 0;
+    text-align: left;
+}
+.remark-code:before {
+    content:"$  ";
+    margin-left: -50px;
+    color: white;
 }
