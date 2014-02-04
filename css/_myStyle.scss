@@ -1,0 +1,15 @@
+//custom css goes here
+
+.container {
+    max-width: 730px;
+}
+
+.header {
+    margin-bottom: 30px;
+    border-bottom: 1px solid $grayAsh;
+
+    h3 {
+        height: 39px;
+        line-height: 39px;
+    }
+}
