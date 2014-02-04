@@ -1,27 +1,35 @@
 ---
-layout: default
+layout: bricks
 ---
 
-    <div class="jumbotron">
-        <h1>Git med Poëtene</h1>
-        <p class="lead">Her har vi lagd veiledninger for vanlige bruksområder ved git.</p>
-        <p><a class="btn btn-lg btn-success" href="slides/" role="button">Slides fra kurset</a></p>
-    </div>
+</div>
+<div>
+<h1>Git</h1>
+</div>
+<div class=container>
 
+<p style=text-align:center;margin-bottom:60px>
+<a style=width:100%;background-color:#222;border-color:#111;color:#ccc class="btn btn-lg btn-default" href="slides/" role="button">
+    Slides fra kurset <span style=float:right>››</span>
+</a>
+</p>
+
+<div class=jumbotron>
 <div class="row">
     {% for guide in site.data.guides %}
-        <div class="col-sm-6">
-            <h4>{{ guide.title }}</h4>
+        <div class="col-sm-12 guide" style=overflow:hidden>
+            <div style=background-image:url({{ guide.image }}) class=guide-image></div>
+            <h3>{{ guide.title }}</h3>
             <p>{{ guide.description }}</p>
             <p><a href="guider/{{ guide.slug }}">Les mer ›</a></p>
         </div>
     {% endfor %}
 </div>
+</div>
 
+<div class=jumbotron>
 <div class="row">
-    <div class="col-sm-6">
-        <iframe src="https://embed.spotify.com/?uri=spotify:user:1114991801:playlist:36f57UI8NyGTnRm1Ig9ryN&theme=white" width="300" height="380" frameborder="0" allowtransparency="true"></iframe>
-    </div>
-    <div class="col-sm-6">
+    <div class="col-sm-12">
+        <iframe class=spotify src="https://embed.spotify.com/?uri=spotify:user:1114991801:playlist:36f57UI8NyGTnRm1Ig9ryN&theme=white" height="380" frameborder="0" allowtransparency="true"></iframe>
     </div>
 </div>
