@@ -16,6 +16,19 @@ layout: bricks
 
 <div class=jumbotron>
 <div class="row">
+    <h2>Oppgaver</h2>
+    {% for oppgave in site.data.oppgaver %}
+        <div class="col-sm-6" style=overflow:hidden>
+            <h3>{{ oppgave.title }}</h3>
+            <p>{{ oppgave.description }}</p>
+            <p><a href="oppgaver/{{ oppgave.slug }}">Les mer ›</a></p>
+        </div>
+    {% endfor %}
+</div>
+</div>
+
+<div class=jumbotron>
+<div class="row">
     {% for guide in site.data.guides %}
         <div class="col-sm-12 guide" style=overflow:hidden>
             <div style=background-image:url({{ guide.image }}) class=guide-image></div>
