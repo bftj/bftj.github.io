@@ -25,6 +25,8 @@ dd {
     <dd>Hent kode fra hoveddepo</dd>
     <dt>git push</dt>
     <dd>Dytt kode opp til hoveddepo</dd>
+    <dt>git clone</dt>
+    <dd>Kopier repo til lokal kopi</dd>
     <dt>git merge BRANCH</dt>
     <dd>Flett sammen denne branchen med BRANCH</dd>
     <dt>git checkout NAVN-PAA-BRANCH</dt>
