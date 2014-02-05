@@ -39,4 +39,4 @@ Endre koden i fila til
 Changes made by me.
 ```
 
-
+Nå kan du skrive git commit, og så git push.
