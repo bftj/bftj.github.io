@@ -29,15 +29,9 @@ Den første som pusher, får det til. De andre vil få beskjed om å pulle før 
 
 Når man puller, kan det være man får merge conflicts. Disse må fikses før man kan fortsette.
 
-Åpne fila som har en konflikt i en tekst-editor. Finn linjer med `<<<<<<<` og visk ut den koden som ikke skal være der.
+Åpne fila som har en konflikt i en tekst-editor. Finn linjer med &lt;&lt;&lt;&lt;&lt;&lt;  og visk ut den koden som ikke skal være der.
 
-```
-<<<<<<<
-Changes made by someone else.
-=======
-Changes made by me.
->>>>>>>
-```
+![](images/merge-conflict.png)
 
 Endre koden i fila til
 
@@ -45,4 +39,4 @@ Endre koden i fila til
 Changes made by me.
 ```
 
-
+Nå kan du skrive git commit, og så git push.
