@@ -19,3 +19,10 @@ Kryss av for å initialize med en README-fil, og velg .gitignore-fil for Java.
 ![clone-url](images/clone-url.png)
 
 Kopier clone URL-en.
+
+Åpne terminalen/Git Bash og naviger til en mappe hvor du vil lagre repositoryet.
+Vær obs på at det lages en egen mappe for repositoryet når du cloner.
+
+```
+git clone git@github.com:USERNAME/REPO.git
+```
