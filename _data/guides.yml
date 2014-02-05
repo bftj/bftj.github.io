@@ -1,28 +1,34 @@
 - title: Eclipse-prosjekter i git
-  slug: git-eclipse.html
+  slug: guider/git-eclipse.html
   description: Noen fete triks
   image: http://www.fairtrasa.com/wp-content/uploads/2012/08/shutterstock_99478112.jpg
 
 - title: Git på Windows
-  slug: git-windows.html
+  slug: guider/git-windows.html
   description: Det enkleste er å installere linux
   image: http://akroot313.andrewkeir313.netdna-cdn.com/wp-content/uploads/windows-8-logo-excerpt.jpg
 
 - title: Git cheat sheet
-  slug: git-cheat-sheet.html
+  slug: guider/git-cheat-sheet.html
   description: Enkel oversikt over de viktigste kommandoene
   image: http://www.cheat-sheets.org/saved-copy/Win32AssemblyCheatSheet.png
 
 - title: Commiting
-  slug: commit-kommandoer.html
+  slug: guider/commit-kommandoer.html
   description: add, commit og status
   image: http://www.bestwesternrussia.ru/images/stories/2013/Sept/wedding046-1-ddb17f.jpg
 
 - title: SSH-nøkler
-  slug: ssh-keys.html
+  slug: guider/ssh-keys.html
   description: Oppsett for å pulle og pushe fra GitHub
   image: http://www.zncc.co.zw/wp-content/uploads/2012/04/secworld-cybercrime5.jpg
+
 - title: Git style
-  slug: git-style.html
+  slug: guider/git-style.html
   description: Smoothalize git-oppsettet ditt med disse fete knepene
   image: http://www.irisclasson.com/wp-content/uploads/2012/08/colors2.jpg
+
+- title: Gratis student-repo
+  slug: https://education.github.com/
+  description: 5 private repositories
+  image: http://placekitten.com/g/100/120
