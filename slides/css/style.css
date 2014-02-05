@@ -84,8 +84,9 @@ img {
     padding: 0;
     text-align: left;
 }
-.remark-code:before {
-    content:"$  ";
-    margin-left: -50px;
-    color: white;
+
+.smallcode .remark-code {
+    font-size: 20px; 
+    width: 130%;
+    margin-left: -15%;
 }
