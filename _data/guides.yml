@@ -17,3 +17,7 @@
   slug: ssh-keys.html
   description: Oppsett for å pulle og pushe fra GitHub
   image: http://www.zncc.co.zw/wp-content/uploads/2012/04/secworld-cybercrime5.jpg
+- title: Git style
+  slug: git-style.html
+  description: Smoothalize git-oppsettet ditt med disse fete knepene
+  image: http://www.irisclasson.com/wp-content/uploads/2012/08/colors2.jpg
