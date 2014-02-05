@@ -18,7 +18,8 @@ layout: bricks
 <div class="row">
     {% for guide in site.data.guides %}
         <div class="col-sm-12 guide" style=overflow:hidden>
-            <div style=background-image:url({{ guide.image }}) class=guide-image></div>
+            <a href="guider/{{ guide.slug }}" style=background-image:url({{ guide.image }}) class=guide-image>
+            </a>
             <h3>{{ guide.title }}</h3>
             <p>{{ guide.description }}</p>
             <p><a href="guider/{{ guide.slug }}">Les mer ›</a></p>
