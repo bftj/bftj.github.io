@@ -28,3 +28,17 @@ Med dette får du automatisk se hvilken branch du er på mens du jobber. Digg.
 ![Git-aware-prompt](https://raw.github.com/jimeh/git-aware-prompt/master/preview.png)
 
 For å installere git-aware prompt går man til [https://github.com/jimeh/git-aware-prompt](https://github.com/jimeh/git-aware-prompt) og følger instruksene i READMEn.
+
+## Git completion
+
+Med dette går du muligheten til å klikke på ```tab``` for å autofullføre navnet på branchen du ønsker å jobbe med. Utrolig nyttig når man har lengre branch-navn.
+
+For å installere dette skriver du i bash ```curl https://raw.github.com/git/git/master/contrib/completion/git-completion.bash -o ~/.git-completion.bash``` og legger til disse linjene nederst i ```.bash_profile```:
+
+```bash
+if [ -f ~/.git-completion.bash ]; then
+    . ~/.git-completion.bash
+fi
+```
+
+Les mer her: [Autocomplete git](http://code-worrier.com/blog/autocomplete-git/)
