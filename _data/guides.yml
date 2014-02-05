@@ -8,6 +8,11 @@
   description: Det enkleste er å installere linux
   image: http://akroot313.andrewkeir313.netdna-cdn.com/wp-content/uploads/windows-8-logo-excerpt.jpg
 
+- title: Git cheat sheet
+  slug: git-cheat-sheet.html
+  description: Enkel oversikt over de viktigste kommandoene
+  image: http://www.cheat-sheets.org/saved-copy/Win32AssemblyCheatSheet.png
+
 - title: Commiting
   slug: commit-kommandoer.html
   description: add, commit og status
