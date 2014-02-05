@@ -31,13 +31,7 @@ Når man puller, kan det være man får merge conflicts. Disse må fikses før m
 
 Åpne fila som har en konflikt i en tekst-editor. Finn linjer med `<<<<<<<` og visk ut den koden som ikke skal være der.
 
-```
-<<<<<<<
-Changes made by someone else.
-=======
-Changes made by me.
->>>>>>>
-```
+![](images/merge-conflict.png)
 
 Endre koden i fila til
 
