@@ -12,11 +12,11 @@ Lag en branch ```git checkout -b BRANCH-NAME```.
 
 Lag en commit i branchen deres. ```git commit```
 
-Checkout master og lag en ny commit der.
+Checkout master og lag en ny commit der. (`git checkout master`)
 
 Sjekk loggen på master ```git log```
 
-Chekout branchen din og skriv ```git merge master```.
+Checkout branchen din og skriv ```git merge master```.
 
 Sjekk loggen din nå ```git log```.
 
