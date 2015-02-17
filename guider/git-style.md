@@ -13,7 +13,7 @@ For å sette opp farger kjører man følgende i terminalen:
 ```
 git config --global color.ui auto
 ```
-og vips så er git en <span style="color:red">f</span><span style="color:chartreuse;">a</span><span style="color:brown;">r</span><span style="color:orange;">gesp</span><span style="color:blue;">rake</span><span style="color:green;">nde</span> <span style="color:#26c;">fest</span><span style="color:#f32;">ival</span>.
+og vips så er git en <span style="background:#faf;text-shadow:1px 1px 1px;letter-spacing:4px;"><span style="color:red">f</span><span style="color:chartreuse;">a</span><span style="color:brown;">r</span><span style="color:orange;">g</span><span style="color:red">e</span><span style="color:brown">s</span><span style="color:orange">p</span><span style="color:blue;">r</span><span style="color:chartreuse">a</span><span style="color:#26c">k</span><span style="color:brown">e</span><span style="color:green;">n</span><span style="color:orange">d</span><span style="color:chartreuse">e</span> <span style="color:#26c;">f</span><span style="color:green">e</span><span style="color:#f32">s</span><span style="color:red">t</span><span style="color:#f32;">i</span><span style="color:pink">v</span><span style="color:blue">a</span><span style="color:brown">l</span></span>.
 
 Før:
 ![Før](http://i.imgur.com/ztZDgfW.png)
