@@ -125,6 +125,19 @@ Untracked files.
 ---
 class: smallcode
 ```
+$ vim README.md
+
+...
+
+```
+
+???
+
+Så gjør vi noen endringer i README.md og lagrer... (vim er en teksteditor, kan det være greit å nevne).
+
+---
+class: smallcode
+```
 $ git status
 
 # On branch master
@@ -146,6 +159,17 @@ Tracked files
 ---
 class: smallcode
 ```
+$ git add README.md
+
+```
+
+???
+
+Legger til filen så den er staged, klar til å commites
+
+---
+class: smallcode
+```
 $ git status
 
 # On branch master
@@ -159,6 +183,17 @@ $ git status
 ???
 
 Staging area
+
+---
+class: smallcode
+```
+$ git commit -m "Add project description to the readme"
+
+```
+
+???
+
+Commit, commitmelding
 
 ---
 class: smallcode
