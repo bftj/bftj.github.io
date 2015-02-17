@@ -19,7 +19,7 @@ Legg til de andre.
 
 Nå kan alle clone repoet.
 
-![](images/clone-url.png)
+![](images/https-clone.png)
 
 Nå kan alle gjøre en endring lokalt, og adde/commite denne.
 
