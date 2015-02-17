@@ -14,9 +14,9 @@ Husk å lage med README-fil, så dere kan klone inn senere.
 
 Klon dere så inn i repoet ```git clone url```
 
-<img src=/images/clone-url.png width=700>
+<img src=/images/https-clone.png width=700>
 
-Nå kan dere legge til filer, commite dem, og så pushe endringene opp til github, med `git push`.
+Nå kan dere legge til filer, commite dem, og så pushe endringene opp til github, med `git push`. Du er nødt til her å skrive inn brukernavnet og passordet ditt hos github.
 
 Loggen over hva som er commitet, ser du i terminalen med `git log`, og på github.com
 
