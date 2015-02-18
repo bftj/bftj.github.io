@@ -8,6 +8,16 @@
   description: Det enkleste er å installere linux
   image: http://akroot313.andrewkeir313.netdna-cdn.com/wp-content/uploads/windows-8-logo-excerpt.jpg
 
+- title: Git på Linux
+  slug: guider/git-linux.html
+  description: Det er ganske enkelt å installere
+  image: http://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Tux.svg/2000px-Tux.svg.png
+
+- title: Git på OS X
+  slug: guider/git-osx.html
+  description: Hvem vet hvordan dette fungerer?
+  image: http://meskellmedicalsupplies.com/communities/8/000/000/214/258//images/7143358.png
+
 - title: Git cheat sheet
   slug: guider/git-cheat-sheet.html
   description: Enkel oversikt over de viktigste kommandoene
