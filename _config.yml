@@ -1,6 +1,7 @@
 name: Git med Poëtene
 markdown: redcarpet
 pygments: true
+baseurl: /git/
 
 exclude: ["Gemfile", "Gemfile.lock", "README.md", "LICENCE", "Makefile"]
 

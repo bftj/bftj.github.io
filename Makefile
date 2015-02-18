@@ -1,6 +1,6 @@
 .PHONY: run
 run:
-	bundle exec jekyll serve --watch
+	bundle exec jekyll serve --watch --baseurl ''
 
 .PHONY: build
 build:
