@@ -6,15 +6,15 @@ layout: guide
 ## Dele kode
 Lag ditt eget repo på github!
 
-<img src=/slides/images/create-repo.png width=700>
+<img src=/git/slides/images/create-repo.png width=700>
 
 Husk å lage med README-fil, så dere kan klone inn senere.
 
-<img src=/images/init-repo.png width=700>
+<img src=/git/images/init-repo.png width=700>
 
 Klon dere så inn i repoet ```git clone url```
 
-<img src=/images/https-clone.png width=700>
+<img src=/git/images/https-clone.png width=700>
 
 Nå kan dere legge til filer, commite dem, og så pushe endringene opp til github, med `git push`. Du er nødt til her å skrive inn brukernavnet og passordet ditt hos github.
 
