@@ -1,7 +1,5 @@
-name: Git med Poëtene
-markdown: redcarpet
+name: Sagaen om Harald Blåtann
 pygments: true
-baseurl: /git/
 
 exclude: ["Gemfile", "Gemfile.lock", "README.md", "LICENCE", "Makefile"]
 
