@@ -2,6 +2,7 @@ name: Sagaen om Harald Blåtann
 highlighter: rouge
 baseurl: /
 markdown: redcarpet
+host: 0.0.0.0
 
 exclude: ["Gemfile", "Gemfile.lock", "README.md", "LICENCE", "Makefile"]
 
