@@ -5,6 +5,10 @@ html, body {
     height: 100%;
 }
 
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'augusta', serif;
+}
+
 .container {
     max-width: 730px;
 }
@@ -36,7 +40,6 @@ body.frontpage {
     h1 {
         font-height: 300px;
         font-size: 100px;
-        font-family: monospace;
         margin-bottom: 40px;
         text-shadow: 0 0 15px #000;
     }
