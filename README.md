@@ -1,11 +1,9 @@
-git-kurs
+bftj.co
 ========
 
-git-kurs for abakus 5. februar
+The bftj.co website
 
-Foreslår å bruke remark.js, som på forrige kurs.
-
-## Remark tips
+## Course slides – Remark tips
 
 _Disable vimium!_
 
