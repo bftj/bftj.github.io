@@ -13,6 +13,11 @@
   description: Work around some issues on OS X 10.10
   image: images/mbed-yosemite.png
 
+- title: Print debugging
+  slug: guides/serial.html
+  description: Setting up print debugging on your PC
+  image: images/coolterm-small.png
+
 - title: Autoflasher
   slug: guides/autoflash.html
   description: Reduce RSI and increase your productivity with this little gem!
@@ -22,3 +27,4 @@
   slug: guides/mbed-org.html
   description: Get up and running with your new device on mbed.org.
   image: images/mbed-org-1.png
+
