@@ -10,18 +10,18 @@ layout: saga
 
 <p style=text-align:center;margin-bottom:60px>
 <a style=width:100%;background-color:#222;border-color:#111;color:#ccc class="btn btn-lg btn-default" href="slides/" role="button">
-    Slides fra kurset <span style=float:right>››</span>
+    Slides <span style=float:right>››</span>
 </a>
 </p>
 
 <div class=jumbotron>
 <div class="row">
     <h2>Exercises</h2>
-    {% for oppgave in site.data.oppgaver %}
+    {% for exercise in site.data.exercises %}
         <div class="col-sm-6" style=overflow:hidden>
-            <h3>{{ oppgave.title }}</h3>
-            <p>{{ oppgave.description }}</p>
-            <p><a href="oppgaver/{{ oppgave.slug }}">Read more ›</a></p>
+            <h3>{{ exercise.title }}</h3>
+            <p>{{ exercice.description }}</p>
+            <p><a href="exercises/{{ exercise.slug }}">Read more ›</a></p>
         </div>
     {% endfor %}
 </div>
