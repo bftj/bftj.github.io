@@ -1,19 +1,11 @@
-- title: Oppgave 1
-  description: Staging og commiting
-  slug: "oppgave-1.html"
+- title: Exercise 1
+  description: Get up and running
+  slug: "exercise-1.html"
 
-- title: Oppgave 2
-  description: Pushe til internett
-  slug: "oppgave-2.html"
+- title: Exercise 2
+  description: Print to serial, write to bluetooth
+  slug: "exercise-2.html"
 
-- title: Oppgave 3
-  description: Dele kode på GitHub
-  slug: "oppgave-3.html"
-
-- title: Oppgave 4
-  description: Branches
-  slug: "oppgave-4.html"
-
-- title: Oppgave 5
-  description: Lage egne pull requests
-  slug: "oppgave-5.html"
+- title: Exercise 3
+  description: Chat with another mbed
+  slug: "exercise-3.html"
