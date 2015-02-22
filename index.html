@@ -1,5 +1,5 @@
 ---
-layout: bricks
+layout: saga
 ---
 
 </div>
@@ -16,12 +16,12 @@ layout: bricks
 
 <div class=jumbotron>
 <div class="row">
-    <h2>Oppgaver</h2>
+    <h2>Exercises</h2>
     {% for oppgave in site.data.oppgaver %}
         <div class="col-sm-6" style=overflow:hidden>
             <h3>{{ oppgave.title }}</h3>
             <p>{{ oppgave.description }}</p>
-            <p><a href="oppgaver/{{ oppgave.slug }}">Les mer ›</a></p>
+            <p><a href="oppgaver/{{ oppgave.slug }}">Read more ›</a></p>
         </div>
     {% endfor %}
 </div>
@@ -35,19 +35,8 @@ layout: bricks
             </a>
             <h3>{{ guide.title }}</h3>
             <p>{{ guide.description }}</p>
-            <p><a href="{{ guide.slug }}">Les mer ›</a></p>
+            <p><a href="{{ guide.slug }}">Read more ›</a></p>
         </div>
     {% endfor %}
 </div>
-</div>
-
-<div class="jumbotron">
-    Kontakt oss på twitter: <a href="http://twitter.com/poetene/">@poetene</a>.
-</div>
-
-<div class=jumbotron>
-<div class="row">
-    <div class="col-sm-12">
-        <iframe class=spotify src="https://embed.spotify.com/?uri=spotify:user:1114991801:playlist:36f57UI8NyGTnRm1Ig9ryN&theme=white" height="380" frameborder="0" allowtransparency="true"></iframe>
-    </div>
 </div>
