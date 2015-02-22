@@ -1,6 +1,7 @@
 name: Sagaen om Harald Blåtann
 highlighter: pygments
 baseurl: /
+markdown: kramdown
 
 exclude: ["Gemfile", "Gemfile.lock", "README.md", "LICENCE", "Makefile"]
 
@@ -13,3 +14,6 @@ sass:
     compile_in_place: false   # true|false
     # If true, compiles sass directly into your jekyll source directory
     # As well as your destination directory
+
+kramdown:
+  input: GFM
