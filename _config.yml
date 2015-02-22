@@ -1,5 +1,5 @@
 name: Sagaen om Harald Blåtann
-pygments: true
+highlighter: pygments
 
 exclude: ["Gemfile", "Gemfile.lock", "README.md", "LICENCE", "Makefile"]
 
