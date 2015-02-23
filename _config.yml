@@ -1,5 +1,5 @@
 name: Sagaen om Harald Blåtann
-highlighter: rouge
+highlighter: pygments
 baseurl: /
 markdown: redcarpet
 
