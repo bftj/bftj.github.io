@@ -3,6 +3,11 @@
   description: Common debugging tricks
   image: http://placekitten.com/g/120/120
 
+- title: Bluetooth Low Energy Primer
+  slug: guides/ble-guide.html
+  description: Everything you need to know to get started with Bluetooth Low Energy.
+  image: http://placekitten.com/g/120/120
+
 - title: Autoflasher
   slug: guides/autoflash.html
   description: Reduce RSI and increase your productivity with this little gem!
