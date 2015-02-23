@@ -2,3 +2,8 @@
   slug: guides/deadmbed.html
   description: Common debugging tricks
   image: http://placekitten.com/g/120/120
+
+- title: Autoflasher
+  slug: guides/autoflash.html
+  description: Reduce RSI and increase your productivity with this little gem!
+  image: http://placekitten.com/g/120/120
