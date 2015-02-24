@@ -12,3 +12,8 @@
   slug: guides/autoflash.html
   description: Reduce RSI and increase your productivity with this little gem!
   image: http://placekitten.com/g/120/120
+
+- title: First time setup
+  slug: guides/mbed-org.html
+  description: Get up and running with your new device on mbed.org.
+  image: http://placekitten.com/g/120/120
