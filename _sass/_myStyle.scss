@@ -17,12 +17,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .header {
-    margin-bottom: 30px;
-    border-bottom: 1px solid $grayAsh;
-
     h3 {
         height: 39px;
         line-height: 39px;
+        margin-bottom: 25px;
     }
 }
 
@@ -65,8 +63,9 @@ body.frontpage {
 }
 
 body.guide .container {
-    background: rgba(255, 255, 255, 0.95);
+    background: #fff;
     margin: 1em auto;
+    font-size: 17px;
 
     img {
         max-width: 100%;
@@ -75,5 +74,42 @@ body.guide .container {
         padding: 10px;
         border: 1px solid #eaeaea;
         background: white;
+    }
+
+    .content {
+
+        border-left: 3px solid #eee;
+        @media (max-width: 650px) {
+            border: 0;
+        }
+        max-width: 600px;
+        margin: 0 auto;
+
+
+        h1::before, h2::before, h3::before,
+        h4::before, h5::before, h6::before {
+            content: '';
+            display: inline-block;
+            left: -80px;
+            position: relative;
+            margin-right: -20px;
+            width: 20px;
+            height: 20px;
+            background: #eee;
+            border: 1px solid #eee;
+            border-radius: 10px;
+            @media (max-width: 650px) {
+                display: none;
+            }
+        }
+
+        &>* {
+            margin: 0 auto;
+            max-width: 500px;
+            padding: 20px;
+        }
+        p, blockquote {
+            background: white;
+        }
     }
 }
