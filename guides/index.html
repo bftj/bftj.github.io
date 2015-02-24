@@ -1,0 +1,18 @@
+---
+layout: guide
+---
+
+<div class="guide-list">
+
+  <h1>Guides</h1>
+
+  {% for guide in site.data.guides %}
+    <div class="col-sm-12">
+        <a href="{{ guide.slug }}" style=background-image:url({{ guide.image }}) class=guide-image>
+        </a>
+        <h3>{{ guide.title }}</h3>
+        <p>{{ guide.description }}</p>
+        <p><a href="{{ guide.slug }}">Read more ›</a></p>
+    </div>
+  {% endfor %}
+</div>
