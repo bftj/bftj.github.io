@@ -67,6 +67,14 @@ body.guide .container {
     margin: 1em auto;
     font-size: 17px;
 
+    .banner {
+        height: 300px;
+        background: #eee no-repeat center center;
+        background-size: cover;
+        margin-left: -15px;
+        margin-right: -15px;
+    }
+
     img {
         max-width: 100%;
         display: block;

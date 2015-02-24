@@ -1,5 +1,6 @@
 ---
 layout: guide
+banner: http://placekitten.com/g/1200/400
 ---
 
 # Autoflashing
