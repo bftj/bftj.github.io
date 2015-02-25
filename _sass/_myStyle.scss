@@ -67,6 +67,11 @@ body.guide .container {
     margin: 1em auto;
     font-size: 17px;
 
+    h3 a {
+        text-decoration: none;
+        color: black;
+    }
+
     .banner {
         height: 300px;
         background: #eee no-repeat center center;
