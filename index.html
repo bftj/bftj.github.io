@@ -28,9 +28,9 @@ layout: saga
 </div>
 
 <div class=jumbotron>
-<div class="row">
+<div class="row guide-list">
     {% for guide in site.data.guides %}
-        <div class="col-sm-12 guide" style=overflow:hidden>
+        <div class="col-sm-12">
             <a href="{{ guide.slug }}" style=background-image:url({{ guide.image }}) class=guide-image>
             </a>
             <h3>{{ guide.title }}</h3>

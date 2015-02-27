@@ -49,17 +49,20 @@ body.frontpage {
     h3 {
         font-weight: bold;
     }
-    .guide-image {
-        float: right;
-        width: 200px;
-        height: 200px;
-        background: white no-repeat center center;
-        background-size: cover;
-        border: 10px solid white;
-    }
-    .guide {
-        margin: 40px 0;
-    }
+}
+
+.guide-list div {
+    margin: 40px 0;
+    overflow: hidden;
+}
+
+.guide-image {
+    float: right;
+    width: 200px;
+    height: 200px;
+    background: white no-repeat center center;
+    background-size: cover;
+    border: 10px solid white;
 }
 
 body.guide .container {
