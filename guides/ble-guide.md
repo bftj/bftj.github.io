@@ -1,6 +1,6 @@
 ---
 layout: guide
-banner: http://placekitten.com/g/1200/400
+banner: images/bluetooth-primer.jpg
 ---
 
 # Bluetooth Low Energy Primer

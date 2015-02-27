@@ -1,5 +1,6 @@
 ---
 layout: guide
+banner: images/mbed-org-1.png
 ---
 
 # First-time setup
