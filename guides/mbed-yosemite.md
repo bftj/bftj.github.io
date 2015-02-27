@@ -11,6 +11,9 @@ A fix is on the way, but not released yet.
 The easiest way to flash your mbed for now, is therefore using a third-party tool.
 Just download [mbed-on-Yosemite](assets/mbed-on-Yosemite.app.zip), unzip it and put it in your Applications folder.
 Then run it, and instead of dragging the mbed hex files onto the mbed drive, drag them onto the 'mbed-on-Yosemite' application.
+
+![](images/yosemite-flash.png)
+
 Then press 'run', which will prompt you for your administrator password.
 
 The mbed drive should then dismount (presenting a warning that the disk was ejected).
