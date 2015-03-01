@@ -198,7 +198,7 @@ Without this include we were not able to use these objects and constants.
 
 If we want to use for instance a vector (known as ArrayList in Java and list in Python) for keeping a lot of values we need to include it.
 
-```
+```cpp
 #include <vector>
 
 std::vector<int> vec;
@@ -221,7 +221,7 @@ printf("%d", vec[2]);
 
 There are two ways of writing an include.
 
-```
+```cpp
 #include <vector>
 #include "mbed.h"
 ```
@@ -239,7 +239,7 @@ When including a file what acutally happens is that the contents of the file is 
 To avoid things being defined twice there is a thing called header guards.
 This is a small piece of code that makes sure that things are only declared the first time this file is included.
 
-```
+```cpp
 #ifndef __MYFILE__HEADER__H__
 #define __MYFILE__HEADER__H__
 
