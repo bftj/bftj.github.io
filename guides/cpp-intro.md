@@ -9,8 +9,8 @@ Understanding of programming languages in general is expected.
 
 # This code example
 
-This guide will use the following code example called blinky to explain how to use C++ with mbed.
-This program flashes a LED on the development board on and off.
+This guide will use the "Hello World! of embedded development, "blinky", to explain how to use C++ with mbed.
+The blinky program flashes a LED on the development board on and off.
 
 ```cpp
 #include "mbed.h"
@@ -21,7 +21,7 @@ int main() {
     while(1) { // this is an infinite loop
         myled = 1;
         wait(0.4);
-        myled = 0;
+        myled = 0; // Turn led off
         wait(0.4);
     }
 }
