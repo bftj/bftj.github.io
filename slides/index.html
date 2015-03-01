@@ -167,6 +167,33 @@ class: center, middle
 ---
 class: center, middle
 
+# LF oppgave 1
+
+```cpp
+
+#define LOG_LEVEL_INFO
+#include "Puck.h"
+
+Puck* puck = &Puck::getPuck();
+
+int main(void) {
+
+  // Initialize the puck
+  puck->init(0xFEED);
+
+  // Let the puck do it's thing
+  while(puck->drive());
+}
+```
+
+???
+
+- Så enkelt er det!
+- Du vil nå kunne finne mbeden (pucken som vi kaller det) i Blåtann-appene dine
+
+---
+class: center, middle
+
 # Blåtann
 
 ## Service
