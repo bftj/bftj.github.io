@@ -33,36 +33,6 @@ When writing your code you write it inside the `int main()` function.
 This is the starting point for your program and every program will execute this function first.
 In our example the program will start by running the `while` loop.
 
-
-# Printing in mbed c++
-
-In normal c++ one would use `prinft("Hello world\n")` or `cout << "Hello world" << endl` to print strings to the standard output of the program.
-
-On an mbed device, there is no standard output!
-Instead we will have to print to one of the two serial ports of the device, either USB or GPIO.
-
-The following snippet will print "Hello World" over USB serial.
-
-```cpp
-Serial usb(USBTX, USBRX); // Set up serial over USB
-
-usb.printf("Hello World"); // Print over the serial connection
-```
-
-If you want to print variables you will need to use a format string, containing characters that specify the types of the variables you wish to print.
-`%s` will interpolate a char array (string), and `%d` an integer.
- 
-```cpp
-Serial usb(USBTX, USBRX);
-int i = 20;
-
-usb.printf("The number is %d", i); // This prints "The number is 20"
-
-char string[] = "Hello Strings!";
-
-usb.printf("The first string is %s", string);
-```
-
 # Objects
 
 Objects in C++ works mostly like objects in other languages like Java.
@@ -151,6 +121,35 @@ myled = 1;
 Here the `=` operator is overloaded and is used to set the value of the led.
 So when you change the value of `myled` here you are actually setting the value of the led.
 
+# Printing in mbed c++
+
+In normal c++ one would use `prinft("Hello world\n")` or `cout << "Hello world" << endl` to print strings to the standard output of the program.
+
+On an mbed device, there is no standard output!
+Instead we will have to print to one of the two serial ports of the device, either USB or GPIO.
+
+The following snippet will print "Hello World" over USB serial.
+
+```cpp
+Serial usb(USBTX, USBRX); // Set up serial over USB
+
+usb.printf("Hello World"); // Print over the serial connection
+```
+
+If you want to print variables you will need to use a format string, containing characters that specify the types of the variables you wish to print.
+`%s` will interpolate a char array (string), and `%d` an integer.
+ 
+```cpp
+Serial usb(USBTX, USBRX);
+int i = 20;
+
+usb.printf("The number is %d", i); // This prints "The number is 20"
+
+char string[] = "Hello Strings!";
+
+usb.printf("The first string is %s", string);
+```
+
 # Defines in C++
 
 A define is a way of giving names to constant values in C++.
@@ -201,6 +200,7 @@ If we want to use for instance a vector (known as ArrayList in Java and list in 
 ```cpp
 #include <vector>
 
+Serial usb(USBTX, USBRX);
 std::vector<int> vec;
 
 vec.push_back(0x12);
@@ -208,13 +208,13 @@ vec.push_back(0xAA);
 vec.push_back(0x00);
 
 // 0x12
-printf("%d", vec[0]);
+usb.printf("%d", vec[0]);
 
 // 0xAA
-printf("%d", vec[1]);
+usb.printf("%d", vec[1]);
 
 // 0x00
-printf("%d", vec[2]);
+usb.printf("%d", vec[2]);
 ```
 
 ## Crocodile mouths or quotation marks?
