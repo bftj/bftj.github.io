@@ -19,6 +19,11 @@ code {
 .hb {
     background-image: url('/images/hb_boi.jpg');
     background-size: cover;
+
+}
+
+.hb h1, h2, h3, h4, h5 {
+    text-shadow: 2px 2px 2px #000, 2px 2px 0.2em #000;
 }
 
 .remark-container {
