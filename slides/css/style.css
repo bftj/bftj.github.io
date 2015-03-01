@@ -26,6 +26,11 @@ code {
     text-shadow: 2px 2px 2px #000, 2px 2px 0.2em #000;
 }
 
+.hb-info {
+    background-image: url('/images/hb_info.jpg');
+    background-size: cover;
+}
+
 .remark-container {
     background-color: #D3E6F7;
 }
