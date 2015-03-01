@@ -20,11 +20,25 @@ class: center, middle
 
 ## Hvem er vi?
 
-Studerer datateknikk på NTNU
+???
+
+- Først og fremst takk til fagkom for muffins og kaffe
+- 4.-5. klasse data@NTNU
+- Blåtannfrelste personligheter
+- Laget et open source blåtannbibliotek for mbed i forbindelse med sommerjobb hos Nordic Semiconductor
+
+---
+class: center, middle, hb
+
+## Hvem var Harald Blåtann?
+
+TODO: a few more slides here
 
 ???
 
-4.-5. klasse
+- Konge av Danmark(~958-986) og Norge(~970-975/986)
+- Samlet alle Danske stammer til ett forent rike og introduserte kristendom
+- Opphavet til navnet Bluetooth da denne teknologien skal samle alle kommunikasjonsprotokoller til én standard
 
 ---
 class: center, middle
@@ -32,49 +46,108 @@ class: center, middle
 # Dette kurset
 
 ## 3 timer
+
+Blåtann  
+mbed  
+Hjelpemidler
+
 ## 3 oppgaver
+
+Lag en mbed med blåtann  
+Chat fra telefonen til mbed-en  
+Something, something, third task
 
 ???
 
-Vi tar en pause mellom hver oppgave
+- Vi holder korte foredrag om teknologi fulgt av oppgaver
+- Under oppgavene går vi rundt og hjelper til, rekk opp hånda om dere trenger hjelp
+- Vi tar ca et kvarters pause mellom hver oppgave
 
 ---
 class: center
 
 # http://bftj.co
 
-*screenshot*
+![](/images/bftjco.png)
 
 ???
 
-Vi har en nettside, som inneholder guider og oppgavene etc.
+- Vi har en nettside, som inneholder **guider**, **oppgavene**, **slides** osv
+- Bruk denne som ressurs når du jobber
+- Denne er tilgjengelig også etter kurset så den kan brukes om du trenger hjelp senere
 
 ---
-class: center
+class: center, middle
 
-# Bluetooth
+# Blåtann LE
 
-trådløs teknologi, blabla
+Trådløs teknologi  
+
+Kort rekkevidde  
+
+Sender data mellom enheter
 
 ???
 
-Få med det mest grunnleggende
+- Bluetooth er en protokoll for kommunikasjon mellom enheter
+- Kort rekkevidde på kommunikasjonen
+- Starter med å annonsere at den finnes -> med info som navn, adresse og liknende
+- Når noen kopler seg til forteller den hva den kan tilby (hvilke services den har)
 
 ---
-class: center
+class: center, middle
 
 # mbed
 
+Lavterskeltilbud til lavnivåprogrammering  
+
+Utviklingsmiljøet i nettleseren  
+
+Drag & drop-installering
+
 ???
 
-Fortell hvordan man bruker det,
-compiler i nettleseren, dragndrop etc.
+- Plug mbed-en i PC-en og den likner på en USB
+- Man utvikler og skriver kode i nettleseren med dokumentasjon og liknende
+- Trykker på en knapp i nettleseren for å laste ned en fil med koden din
+- Dra denne filen over til mbed-en for å installere kode på mbeden
+
+- Takk til Nordic for donasjon av mbedsene dere ser her. Hver gruppe skal få med seg en hjem til odel og eie.
 
 ---
-class: center
+class: center, middle
 
 # C++
 
+Utviklingsspråket til mbed  
+
+Høynivåspråk i embedded-verden
+
+???
+
+- (Håndsopprekning) Hvor mange har jobba i C++ før?
+- Som om C og Java hadde et barn
+
+- C++ gir oss klasser og andre hjelpmidler når vi utvikler
+- Finnes mange bra bibliotek og andre ressurser
+- De som trenger en kjapp gjennomgang av hvordan ting gjøres kan se på guiden vår på sida
+
+---
+class: center, middle
+
+# Puck-biblioteket
+
+Open source  
+
+Skrevet av oss  
+
+Enkelt
+
+???
+
+- Fullt open source-bibliotek alle kan bidra til og jobbe med
+- Laget av oss i sommer for Nordic
+- Abstraherer bort mye av kompleksiteten til Blåtann
 
 ---
 class: center, middle
@@ -87,27 +160,41 @@ class: center, middle
 
 ???
 
-Oppgaven ligger på http://bftj.co
+- Oppgaven ligger på http://bftj.co
+- Dere skal lage en Blåtannenhet som kan koples til og fra ved hjelp av mbed og Puck-biblioteket
+- Dere har ~30 min på dere og vi går rundt
+
+---
+class: center, middle
+
+# Blåtann
+
+## Service
+
+## Characteristic
+
+???
+
+- En "service" er en samling data. F.eks. tempraturmåling fra termometer, hjerterytme fra pulsklokke etc.
+- Hver "service" kan ha flere "characteristics" dette er en 20-bytes variabel som kan leses eller skrives over Blåtann
 
 ---
 class: center
 
 # Print debugging
 
----
-class: center
+Skrive data fra mbed til PC-en
 
-# Skrive data over bluetooth
+???
+
+- Skriv via en `logger` i biblioteket vårt
+- Må ha et program for å ta i mot dataen
+- Se guiden vår på nettsida
 
 ---
 class: center, middle
 
 # Oppgave 2
-
----
-class: center
-
-# Koble til enheter fra en mbed
 
 ---
 class: center, middle

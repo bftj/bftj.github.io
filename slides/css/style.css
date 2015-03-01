@@ -16,6 +16,11 @@ code {
  * #C2624A;
  */
 
+.hb {
+    background-image: url('/images/hb_boi.jpg');
+    background-size: cover;
+}
+
 .remark-container {
     background-color: #D3E6F7;
 }
