@@ -49,27 +49,23 @@ Writing that line will call the constructor of the object.
 In our case we are sending the constructor the parameter `LED1`.
 After this line we have the variable `myled` initialized with the parameter `LED1`.
 
-## Accessing attributes in objects
+## Accessing methods and attributes on objects
 
-To access an attribute on an object you use the dot notation.
+To access methods and attributes on an object, use the dot notation.
 
 ```cpp
-// access myAttribute of myObject
-myObject.myAttribute;
+MyObject myObject;
 
-int amount = myObject.count;
+// Call method on object
+myObject.setCount(30);
 
-// amount will now have the value of myObject.count
-printf("%d", amount);
+// Access attribute on object
+int count = myObject.count;
 ```
 
-## Calling methods on objects
+### Pointers
 
-There are two ways of calling a method.
-If your object is a pointer, you can call a function on an object using the arrow notation `->`.
-If your object is not a pointer you can use the dot notation `.`.
-Methods can either return a value or not return a value.
-A value can be any value in C++ (int, char, object, struct, template....etc).
+If your object is a pointer, you can access methods and fields using the arrow notation `->`.
 
 ```cpp
 MyObject *myObject = new MyObject();
@@ -77,20 +73,19 @@ MyObject *myObject = new MyObject();
 // add a value to our object
 myObject->setValue(0x12);
 
-// get the value from our object
+// Value will now be 0x12
 int value = myObject->getValue();
+```
 
-// value will be 0x12
-printf("%x", value);
+### References
 
-MyObject otherObject;
+Reference variables also use the dot notation, even though they are pointers in disguise.
 
-otherObject.setValue(0x12);
+```cpp
+MyObject &myObject = methodReturningReferenceToObject();
 
-int otherValue = otherObject.getValue();
-
-// otherValue will be 0x12
-printf("%x", otherValue);
+// Access attribute on object reference
+int count = myObject.count;
 ```
 
 ## Operator overloading
