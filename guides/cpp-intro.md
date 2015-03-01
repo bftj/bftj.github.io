@@ -9,17 +9,17 @@ Understanding of programming languages in general is expected.
 
 # This code example
 
-This guide will use the "Hello World! of embedded development, "blinky", to explain how to use C++ with mbed.
+This guide will use the "Hello World!" of embedded development, "blinky", to explain how to use C++ with mbed.
 The blinky program flashes a LED on the development board on and off.
 
 ```cpp
 #include "mbed.h"
 
-DigitalOut myled(LED1);
+DigitalOut myled(LED1); // Create a reference to led LED1
 
 int main() {
-    while(1) { // this is an infinite loop
-        myled = 1;
+    while(1) {
+        myled = 1; // Turn led on
         wait(0.4);
         myled = 0; // Turn led off
         wait(0.4);
@@ -118,10 +118,10 @@ So when you change the value of `myled` here you are actually setting the value 
 
 # Printing in mbed c++
 
-In normal c++ one would use `prinft("Hello world\n")` or `cout << "Hello world" << endl` to print strings to the standard output of the program.
+On mbed, printing is done with the familiar `printf`  function.
+`printf` usually prints to the standard output of the device, but there is no standard output on an mbed device!
 
-On an mbed device, there is no standard output!
-Instead we will have to print to one of the two serial ports of the device, either USB or GPIO.
+Instead we will have to print to one of the two serial ports of the device, either via USB or on GPIO pins.
 
 The following snippet will print "Hello World" over USB serial.
 
