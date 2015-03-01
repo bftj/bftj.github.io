@@ -1,5 +1,6 @@
 ---
 layout: guide
+banner: images/cpp-banner.png
 ---
 
 # C++ introduction for the mbed developer
