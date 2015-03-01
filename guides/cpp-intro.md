@@ -33,6 +33,36 @@ When writing your code you write it inside the `int main()` function.
 This is the starting point for your program and every program will execute this function first.
 In our example the program will start by running the `while` loop.
 
+
+# Printing in mbed c++
+
+In normal c++ one would use `prinft("Hello world\n")` or `cout << "Hello world" << endl` to print strings to the standard output of the program.
+
+On an mbed device, there is no standard output!
+Instead we will have to print to one of the two serial ports of the device, either USB or GPIO.
+
+The following snippet will print "Hello World" over USB serial.
+
+```cpp
+Serial usb(USBTX, USBRX); // Set up serial over USB
+
+usb.printf("Hello World"); // Print over the serial connection
+```
+
+If you want to print variables you will need to use a format string, containing characters that specify the types of the variables you wish to print.
+`%s` will interpolate a char array (string), and `%d` an integer.
+ 
+```cpp
+Serial usb(USBTX, USBRX);
+int i = 20;
+
+usb.printf("The number is %d", i); // This prints "The number is 20"
+
+char string[] = "Hello Strings!";
+
+usb.printf("The first string is %s", string);
+```
+
 # Objects
 
 Objects in C++ works mostly like objects in other languages like Java.
@@ -224,27 +254,3 @@ Right after it is defined we run the code in `// declare stuff here`.
 The next time someone includes the same file, the ridiculously specific name will be defined, and we won't run the code below.
 
 If all header files have this, it will always be safe to include them wherever you need them.
-
-# Printing in C++
-
-The function `printf()` prints output to the console where the program is being run.
-The following code snippet will print "Hello World" to the console.
-
-```
-printf("Hello World");
-```
-
-If you want to print variables you will need to use special characters to print these and give the variables as arguments afterwards.
-`%s` says that a string should replace these characters and `%d` says a number should replace these characters.
-
-```
-#include <string>
-
-int i = 20;
-
-printf("The number is %d", i); // This prints "The number is 20"
-
-string str1 = "Hello";
-
-printf("The first string is %s", str1);
-```
