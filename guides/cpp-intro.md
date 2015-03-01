@@ -10,19 +10,19 @@ Understanding of programming languages in general is expected.
 
 # This code example
 
-This guide will use the following code example called blinky to explain how to use C++ with mbed.
-This program flashes a LED on the development board on and off.
+This guide will use the "Hello World!" of embedded development, "blinky", to explain how to use C++ with mbed.
+The blinky program flashes a LED on the development board on and off.
 
 ```cpp
 #include "mbed.h"
 
-DigitalOut myled(LED1);
+DigitalOut myled(LED1); // Create a reference to led LED1
 
 int main() {
-    while(1) { // this is an infinite loop
-        myled = 1;
+    while(1) {
+        myled = 1; // Turn led on
         wait(0.4);
-        myled = 0;
+        myled = 0; // Turn led off
         wait(0.4);
     }
 }
@@ -50,27 +50,23 @@ Writing that line will call the constructor of the object.
 In our case we are sending the constructor the parameter `LED1`.
 After this line we have the variable `myled` initialized with the parameter `LED1`.
 
-## Accessing attributes in objects
+## Accessing methods and attributes on objects
 
-To access an attribute on an object you use the dot notation.
+To access methods and attributes on an object, use the dot notation.
 
 ```cpp
-// access myAttribute of myObject
-myObject.myAttribute;
+MyObject myObject;
 
-int amount = myObject.count;
+// Call method on object
+myObject.setCount(30);
 
-// amount will now have the value of myObject.count
-printf("%d", amount);
+// Access attribute on object
+int count = myObject.count;
 ```
 
-## Calling methods on objects
+### Pointers
 
-There are two ways of calling a method.
-If your object is a pointer, you can call a function on an object using the arrow notation `->`.
-If your object is not a pointer you can use the dot notation `.`.
-Methods can either return a value or not return a value.
-A value can be any value in C++ (int, char, object, struct, template....etc).
+If your object is a pointer, you can access methods and fields using the arrow notation `->`.
 
 ```cpp
 MyObject *myObject = new MyObject();
@@ -78,20 +74,19 @@ MyObject *myObject = new MyObject();
 // add a value to our object
 myObject->setValue(0x12);
 
-// get the value from our object
+// Value will now be 0x12
 int value = myObject->getValue();
+```
 
-// value will be 0x12
-printf("%x", value);
+### References
 
-MyObject otherObject;
+Reference variables also use the dot notation, even though they are pointers in disguise.
 
-otherObject.setValue(0x12);
+```cpp
+MyObject &myObject = methodReturningReferenceToObject();
 
-int otherValue = otherObject.getValue();
-
-// otherValue will be 0x12
-printf("%x", otherValue);
+// Access attribute on object reference
+int count = myObject.count;
 ```
 
 ## Operator overloading
@@ -121,6 +116,35 @@ myled = 1;
 
 Here the `=` operator is overloaded and is used to set the value of the led.
 So when you change the value of `myled` here you are actually setting the value of the led.
+
+# Printing in mbed c++
+
+On mbed, printing is done with the familiar `printf`  function.
+`printf` usually prints to the standard output of the device, but there is no standard output on an mbed device!
+
+Instead we will have to print to one of the two serial ports of the device, either via USB or on GPIO pins.
+
+The following snippet will print "Hello World" over USB serial.
+
+```cpp
+Serial usb(USBTX, USBRX); // Set up serial over USB
+
+usb.printf("Hello World"); // Print over the serial connection
+```
+
+If you want to print variables you will need to use a format string, containing characters that specify the types of the variables you wish to print.
+`%s` will interpolate a char array (string), and `%d` an integer.
+ 
+```cpp
+Serial usb(USBTX, USBRX);
+int i = 20;
+
+usb.printf("The number is %d", i); // This prints "The number is 20"
+
+char string[] = "Hello Strings!";
+
+usb.printf("The first string is %s", string);
+```
 
 # Defines in C++
 
@@ -169,9 +193,10 @@ Without this include we were not able to use these objects and constants.
 
 If we want to use for instance a vector (known as ArrayList in Java and list in Python) for keeping a lot of values we need to include it.
 
-```
+```cpp
 #include <vector>
 
+Serial usb(USBTX, USBRX);
 std::vector<int> vec;
 
 vec.push_back(0x12);
@@ -179,20 +204,20 @@ vec.push_back(0xAA);
 vec.push_back(0x00);
 
 // 0x12
-printf("%d", vec[0]);
+usb.printf("%d", vec[0]);
 
 // 0xAA
-printf("%d", vec[1]);
+usb.printf("%d", vec[1]);
 
 // 0x00
-printf("%d", vec[2]);
+usb.printf("%d", vec[2]);
 ```
 
 ## Crocodile mouths or quotation marks?
 
 There are two ways of writing an include.
 
-```
+```cpp
 #include <vector>
 #include "mbed.h"
 ```
@@ -210,7 +235,7 @@ When including a file what acutally happens is that the contents of the file is 
 To avoid things being defined twice there is a thing called header guards.
 This is a small piece of code that makes sure that things are only declared the first time this file is included.
 
-```
+```cpp
 #ifndef __MYFILE__HEADER__H__
 #define __MYFILE__HEADER__H__
 
@@ -225,27 +250,3 @@ Right after it is defined we run the code in `// declare stuff here`.
 The next time someone includes the same file, the ridiculously specific name will be defined, and we won't run the code below.
 
 If all header files have this, it will always be safe to include them wherever you need them.
-
-# Printing in C++
-
-The function `printf()` prints output to the console where the program is being run.
-The following code snippet will print "Hello World" to the console.
-
-```
-printf("Hello World");
-```
-
-If you want to print variables you will need to use special characters to print these and give the variables as arguments afterwards.
-`%s` says that a string should replace these characters and `%d` says a number should replace these characters.
-
-```
-#include <string>
-
-int i = 20;
-
-printf("The number is %d", i); // This prints "The number is 20"
-
-string str1 = "Hello";
-
-printf("The first string is %s", str1);
-```
