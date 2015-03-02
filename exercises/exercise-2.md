@@ -18,7 +18,7 @@ When you have made a characteristic, compiled, flashed and run your code on the 
 [B-BLE](https://play.google.com/store/apps/details?id=com.billy.billylightblue&hl=en) or
 [LightBlue](https://itunes.apple.com/en/app/lightblue-bluetooth-low-energy/id557428110).
 
-1. **Add a `onDataWritten` handler to your program.**
+1. **Add a `onCharacteristicWrite` handler to your program.**
 Now that we are able to write data to the puck over Bluetooth using our cell phones, we should find something useful to do with this data.
 One cool thing to do is to print it out to a terminal on your laptop, so let's do that in the next step.
 
