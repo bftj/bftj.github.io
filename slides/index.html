@@ -265,6 +265,75 @@ class: center, middle
 # Oppgave 2
 
 ---
+class: center
+
+# LF oppgave 2
+
+```cpp
+const UUID SAMPLE_GATT_SERVICE =
+  stringToUUID("bftj sample     ");
+
+const UUID SAMPLE_GATT_CHARACTERISTIC =
+  stringToUUID("bftj sample char");
+```
+
+---
+class: center
+
+# LF oppgave 2
+
+```cpp
+puck->addCharacteristic(
+  SAMPLE_GATT_SERVICE,
+  SAMPLE_GATT_CHARACTERISTIC,
+  20,
+  GattCharacteristic::
+    BLE_GATT_CHAR_PROPERTIES_WRITE |
+  GattCharacteristic::
+    BLE_GATT_CHAR_PROPERTIES_READ);
+```
+
+---
+class: center
+
+# LF oppgave 2
+
+```cpp
+// Bind handler
+puck->onCharacteristicWrite(
+  &SAMPLE_GATT_CHARACTERISTIC,
+  onMessageReceived);
+
+// Finalize puck
+puck->init(0xFFFF);
+
+// Hand over control to the BLE-stack
+while(puck->drive());
+```
+
+---
+class: center
+
+# LF oppgave 2
+
+```cpp
+void onMessageReceived(
+    const uint8_t* value,
+    uint8_t length) {
+
+  LOG_INFO("Received message of %d bytes: ",
+    length);
+
+  for (int i=0; i<length; i++) {
+    logger.printf("%c", value[i]);
+  }
+
+  logger.printf("\n");
+}
+```
+
+
+---
 class: center, middle
 
 # SPOILER ALERT
