@@ -22,3 +22,12 @@ See the [step-by-step import guide](guides/mbed-import.html) for tips if you get
 If you were able to find your device using your smartphone, you have completed exercise 1.
 Congratulations!
 Now you can [read up on some of the guides](guides) if you want, or continue with [the next exercise](exercises/exercise-2.html), or just chill out for a bit until we continue with the slides afterwards.
+
+# Tips
+
+If you have a hard time completing this assignment here are some resources for you to have a look at.
+
+[First time setup](guides/mbed-org.html)  
+[How to use libraries on mbed.org](guides/mbed-import.html)  
+[How to use the puck library](guides/pucklib.html)  
+[C++ for the mbed developer](guides/cpp-intro.html)
