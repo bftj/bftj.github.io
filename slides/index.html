@@ -321,14 +321,9 @@ void onMessageReceived(
     const uint8_t* value,
     uint8_t length) {
 
-  LOG_INFO("Received message of %d bytes: ",
-    length);
-
-  for (int i=0; i<length; i++) {
-    logger.printf("%c", value[i]);
-  }
-
-  logger.printf("\n");
+  LOG_INFO(
+    "Received message of %d bytes: %.*s\n",
+    length, length, value);
 }
 ```
 
