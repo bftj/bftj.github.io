@@ -118,3 +118,14 @@ ul {
     padding: 0;
     list-style-position: inside;
 }
+
+.full-image {
+    padding: 0;
+}
+
+.full-image .bg {
+    width: 100%;
+    height: 100%;
+    background: url() no-repeat center center;
+    background-size: cover;
+}
