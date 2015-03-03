@@ -22,7 +22,11 @@ code {
 
 }
 
-.hb h1, h2, h3, h4, h5 {
+.hb h1,
+.hb h2,
+.hb h3,
+.hb h4,
+.hb h5 {
     text-shadow: 2px 2px 2px #000, 2px 2px 0.2em #000;
 }
 
