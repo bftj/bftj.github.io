@@ -339,7 +339,14 @@ const UUID SAMPLE_GATT_SERVICE =
   stringToUUID("my service uuid ");
 const UUID SAMPLE_GATT_CHARACTERISTIC =
   stringToUUID("characteristiiic");
+```
 
+---
+class: center
+
+# Eksempel fra puck-biblioteket
+
+```cpp
 puck->addCharacteristic(
   SAMPLE_GATT_SERVICE,
   SAMPLE_GATT_CHARACTERISTIC,
@@ -351,22 +358,78 @@ puck->addCharacteristic(
 ```
 
 ---
+class: center, middle
+
+# Print debugging
+
+---
 class: center
 
 # Print debugging
 
-Skrive data fra mbed til PC-en
+### Skrive ut data fra program til stdout
+
+```cpp
+printf("My %s is %d characters long!",
+  "superstring", 42);
+```
+
+### Men mbed har ingen stdout!
+
+```cpp
+// Serial over USB, could be over GPIO
+Serial usb(USBTX, USBRX);
+
+// Print over the serial connection
+usb.printf("Hello World");
+```
 
 ???
 
-- Skriv via en `logger` i biblioteket vårt
 - Må ha et program for å ta i mot dataen
-- Se guiden vår på nettsida
+
+---
+class: center
+
+# Logging med pucklibbet
+
+### Implementert med macroer (forsvinner i prod)
+
+```cpp
+#define LOG_LEVEL_INFO
+#include "Puck.h"
+
+char s[] = "info";
+LOG_INFO("Such print, very %s.", s);
+```
+
+### Vil printe "[I] Such string, very info."
+
+???
+
+Strenger i c++ er, i likhet med strenger i c, nullterminerte.
+Log level makroer også tilgjengelig for ERROR, WARN, INFO, DEBUG, VEROSE.
+
+---
+class: center
+
+# Det endelige resultat
+
+![coolterm banner](/images/coolterm-banner.png)
+
+### Full seriell-guide på [/guides/serial](/guides/serial.html)
 
 ---
 class: center, middle
 
 # Oppgave 2
+
+---
+class: center, middle
+
+# SPOILER ALERT
+
+Løsningsforslag for oppgave 2 følger
 
 ---
 class: center
@@ -430,14 +493,6 @@ void onMessageReceived(
     length, length, value);
 }
 ```
-
-
----
-class: center, middle
-
-# SPOILER ALERT
-
-Løsningsforslag for oppgave 2 følger
 
 ---
 class: center, middle
