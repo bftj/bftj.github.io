@@ -14,7 +14,7 @@ Check out the [library importing guide](guides/mbed-import.html) if you get stuc
 1. **Create a GATT Characteristic for receiving chat messages using the Puck library.**
 In order to be able to receive information over Bluetooth, we need to make a writable GATT characteristic.
 Make one that is 20 bytes long, which is the maximum length allowed for characteristics.
-(Check out the [Puck lib tutorial](http://localhost:4000/guides/pucklib.html) for a quick refresher on how to do that if you get stuck.)
+(Check out the [Puck lib tutorial](guides/pucklib.html) for a quick refresher on how to do that if you get stuck.)
 When you have made a characteristic, compiled, flashed and run your code on the development board, you should be able to see the characteristic available from your smartphone using a BLE inspector app such as
 [B-BLE](https://play.google.com/store/apps/details?id=com.billy.billylightblue&hl=en) or
 [LightBlue](https://itunes.apple.com/en/app/lightblue-bluetooth-low-energy/id557428110).
