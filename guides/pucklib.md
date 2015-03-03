@@ -44,10 +44,16 @@ Finally, the Puck library acts a cooperative multitasker coordinator, which mean
 This means that your main loop should look like this:
 
 ```cpp
+puck->init(0x1234);
 while(puck->drive()) {
     /* do stuff here if you want, but nothing that takes too long */
 }
 ```
+
+Note that we also call `puck->init(..)` here.
+This function tells the puck library that is has been configured, and that the drive loop is about to start.
+The init function should be the last puck method call before `puck->drive()`.
+That means that everything described in the following sections of the guide should happen *before* `puck->init(..)`.
 
 ## Setting up GATT Characteristics
 
