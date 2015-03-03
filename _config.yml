@@ -15,3 +15,6 @@ sass:
     compile_in_place: false   # true|false
     # If true, compiles sass directly into your jekyll source directory
     # As well as your destination directory
+
+redcarpet:
+    extensions: ['with_toc_data']
