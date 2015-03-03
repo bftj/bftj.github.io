@@ -38,6 +38,11 @@
   description: Get up and running with your new device on mbed.org.
   image: images/mbed-org-1.png
 
+- title: Using LightBlue on iOS
+  slug: guides/lightblue.html
+  description: Inspecting your BLE devices with your phone
+  image: images/lightblue2.png
+
 - title: Using the Puck Library
   slug: guides/pucklib.html
   description: When you're prototyping Bluetooth Low Energy apps on an mbed, the easiest way to get started is by using the Puck library.
