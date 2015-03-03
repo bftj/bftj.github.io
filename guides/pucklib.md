@@ -83,6 +83,18 @@ puck->onCharacteristicWrite(&characteristicUuid, onChange);
 
 Now, the `onChange` function will be called every time that GATT Charactertistic is written over Bluetooth.
 
+
+## Updating a GATT Characteristic value
+
+To update the value of a characteristic, you can use `updateCharacteristicValue(..)`:
+
+```cpp
+const UUID uuid = ...;
+uint8_t* value = ...;
+int length = ...;
+puck->updateCharacteristicValue(uuid, value, length);
+```
+
 ## Useful links
 
 - [Puck library documentation](http://developer.mbed.org/teams/Nordic-Pucks/code/Puck/docs/e41c83f1430e/classPuck.html)
