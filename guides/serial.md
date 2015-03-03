@@ -53,3 +53,9 @@ Select the usbdevice in the dropdown menu.
 Finally, press connect.
 
 ![](images/coolterm-connect.png)
+
+## Linux
+
+Download this thing (we haven't tested it).
+
+[CoolTerm](http://freeware.the-meiers.org/CoolTermLinux.zip)
