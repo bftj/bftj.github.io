@@ -235,16 +235,76 @@ int main(void) {
 ---
 class: center, middle
 
-# Blåtann
+# Blåtann LE Primer
 
-## Service
+---
+class: center
 
-## Characteristic
+# Blåtann LE Primer
+
+### Energieffektiv over korte avstander
+### Reklamerer jevnlig for dens "services"
+### "services" tilbys etter tilkobling
+### Pauser så reklamering til koblingen avslutter
 
 ???
 
-- En "service" er en samling data. F.eks. tempraturmåling fra termometer, hjerterytme fra pulsklokke etc.
-- Hver "service" kan ha flere "characteristics" dette er en 20-bytes variabel som kan leses eller skrives over Blåtann
+Reklamen inneholder ting som
+- navn
+- adresse
+- UUIDer på tjenester og karakteristikker
+
+---
+class: center
+
+# Blåtann LE-paradigmet
+
+<img alt="One does not simply open a BLE socket and start pumping data" src=/images/ble-guide-simply.jpg style="width: auto">
+
+???
+
+For å oppnå lavt energibruk, og en effektiv og tilpasset protokoll er det masse rare konsepter man må bruke.
+Det fins ikke "BLE sockets" man bare kan pumpe full av data som om man snakket med en server over TCP.
+Istedet opererer man med services og characteristics.
+
+---
+class: center
+
+# Services
+
+### En "service" er en samling data.
+### F.eks. tempraturmåling fra termometer, hjerterytme fra pulsklokke etc.
+### Hver "service" kan ha flere "characteristics"
+
+---
+class: center
+
+# Characteristics
+
+### Er 20-bytes variabler som aksesseres over BLE
+### Kan tilby lesing, skriving, varsel m.m.
+### Hjerterytmeservicen kan ha "heartrate" og "bodylocation" characteristics
+
+---
+class: center
+
+# Eksempel fra puck-biblioteket
+
+```cpp
+const UUID SAMPLE_GATT_SERVICE =
+  stringToUUID("my service uuid ");
+const UUID SAMPLE_GATT_CHARACTERISTIC =
+  stringToUUID("characteristiiic");
+
+puck->addCharacteristic(
+  SAMPLE_GATT_SERVICE,
+  SAMPLE_GATT_CHARACTERISTIC,
+  20,
+  GattCharacteristic::
+    BLE_GATT_CHAR_PROPERTIES_WRITE |
+  GattCharacteristic::
+    BLE_GATT_CHAR_PROPERTIES_READ);
+```
 
 ---
 class: center
