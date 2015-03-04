@@ -349,6 +349,49 @@ Enkelt
 - Abstraherer bort mye av kompleksiteten til Blåtann
 
 ---
+class: full-image
+
+<div class=bg style=background-image:url(http://i.imgur.com/WJAuxiP.png)>
+</div>
+
+???
+
+Hvorfor vi lagde libbet:
+- dette er sånn et enkelt eksempel så ut uten libbet i sommer
+
+---
+class: center, middle
+
+```cpp
+
+#define LOG_LEVEL_INFO
+#include "Puck.h"
+
+Puck* puck = &Puck::getPuck();
+
+int main(void) {
+
+  // Initialize the puck
+  puck->init(0xFEED);
+
+  // Let the puck do its thing
+  while(puck->drive());
+}
+```
+
+
+???
+
+Hvorfor vi lagde libbet:
+- her er det samme med puck-libbet
+- nå skal det sies at mye har endret seg i mbed-verdenen siden i sommer, og det er bedre enn før å ikke bruke libbet
+- libbet fortsatt lettest
+- det vi ønsker er at libbet ikke skal trengs tilslutt, fordi vanlig mbed har fått alle featuresene vi har i libbet også
+
+---
+
+
+
 class: center, middle
 
 # En rask gjennongang av hvordan man jobber på mbed
@@ -380,11 +423,37 @@ Koble til BLE-enheter, skriv/les til dem
 ---
 class: center, middle
 
+#### Underveisoppsummering:
+
+# Harald Blåtann
+
+# BLE
+
+# IBeacon, IoT, Wearables
+
+# Mbed
+
+...
+
+---
+class: center, middle
+
+...
+
+# C++
+
+# Puck-biblioteket
+
+# Debugging med telefon
+
+---
+class: center, middle
+
 # Oppgave 1
 
 ## Koble til mbed
 
-### http://bftj.co
+### http://bftj.co/exercise-1
 
 ???
 
@@ -406,7 +475,6 @@ class: center, middle
 
 ```cpp
 
-#define LOG_LEVEL_INFO
 #include "Puck.h"
 
 Puck* puck = &Puck::getPuck();
@@ -525,6 +593,12 @@ class: center, middle
 
 # Print debugging
 
+
+???
+
+- det går også an å bruke gdb, osv, men det må settes opp
+- print-debugging er greit å ha
+
 ---
 class: center
 
@@ -585,7 +659,36 @@ class: center
 ---
 class: center, middle
 
+# Print debugging tar tid
+
+???
+
+- det destroyer ytelse
+- kan til og med endre oppførsel på programmet hvis ting må være realtime
+
+---
+class: full-image
+
+<div class=bg style=background-image:url(http://nordicsemiconductor.github.io/puck/images/IR-nofilter.jpg)>
+</div>
+
+???
+- fortell historien om hvordan print-debugging ødela ir-pucken
+---
+class: center, middle
+
+#### Underveisoppsummering:
+
+# BLE Primer
+
+# Print debugging
+
+---
+class: center, middle
+
 # Oppgave 2
+
+### http://bftj.co/exercise-2
 
 ---
 class: center, middle
@@ -661,6 +764,8 @@ void onMessageReceived(
 class: center, middle
 
 # Oppgave 3
+
+### http://bftj.co/exercise-3
 
 ---
 class: center, middle
