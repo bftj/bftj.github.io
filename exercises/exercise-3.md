@@ -24,8 +24,12 @@ Ask us about this. We're going to use this app, since it supports notify.
 Alternatively, LightBlue also supports notify.
 
 1. **Add rules to the Puck Central app that post to the Internet when notify is triggered**
-Post to this url: http://wall.bftj.co/
-In the post body, just write a single number 1, 2, 3 or 4.
+Post to this url: `http://wall.bftj.co/`.
+In the post body, just write a single number 1, 2, 3 or 4, in the following format:
+
+```
+message=1
+```
 
 1. **Try connecting it all together and pushing the buttons.**
 If it is all working correctly, you should see the counter at wall.bftj.co increase on each button press!
