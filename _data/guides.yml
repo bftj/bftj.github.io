@@ -18,6 +18,11 @@
   description: How to use other libraries in your mbed application.
   image: images/mbed-import-small.png
 
+- title: Compiling on mbed
+  slug: guides/mbed-compile.html
+  description: How to compile your completed code in mbed's compiler
+  image: images/mbed-compile-banner.png
+
 - title: Bluetooth Low Energy Primer
   slug: guides/ble-guide.html
   description: Everything you need to know to get started with Bluetooth Low Energy.
