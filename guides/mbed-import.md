@@ -63,3 +63,6 @@ int main() {
 ```
 
 ![](images/mbed-import-5.png)
+
+Now you can compile and run your code!
+Check our [our compile guide](guides/mbed-compile.html) for infor about how to do that.
