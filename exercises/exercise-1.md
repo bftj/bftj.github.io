@@ -9,7 +9,7 @@ banner: http://cdn.desktopwallpapers4.me/wallpapers/fantasy/1920x1200/2/17967-vi
 There is a [step-by-step guide available in the guides section](guides/mbed-org.html).
 
 1. **Import the location puck in the [online compiler](https://developer.mbed.org/compiler/).**
-See the [step-by-step import guide](guides/mbed-import.html) for tips if you get stuck.
+See the [step-by-step import guide](guides/mbed-import.html) for tips if you get stuck. Use the `Example Puck (BLE)` template.
 
 1. **Set a unique advertising ID for your device in main.cpp**. By default it will be `0xBA55`. You can put anything you want here, as long as it is a positive number less than or equal to `0xFFFF`.
 ![](images/main-cpp-id.png)
