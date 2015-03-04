@@ -19,7 +19,7 @@ You can use [InterruptIn](http://developer.mbed.org/handbook/InterruptIn) to set
 We can create a single characteristic that holds the value `0` when no button is pressed, `1` when button 1 is pressed, `2` when button 2 is pressed, etc.
 Set the characteristic to `NOTIFY` and `READ`.
 
-1. **Get a hold of the Puck Central Android app.**
+1. **Get a hold of the [Puck Central Android app](assets/puck-central.apk).**
 Ask us about this. We're going to use this app, since it supports notify.
 Alternatively, LightBlue also supports notify.
 
