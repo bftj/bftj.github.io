@@ -1,6 +1,6 @@
 ---
 layout: guide
-banner: http://img0.mxstatic.com/wallpapers/cdfb93217b6e887c0485409ee5c50423_large.jpeg
+banner: http://i.imgur.com/82HNjrF.jpg
 ---
 
 # Exercise 3
