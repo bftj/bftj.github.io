@@ -1,42 +1,37 @@
-- title: My mbed doesn't work
-  slug: guides/deadmbed.html
-  description: Common debugging tricks
-  image: images/debugging-square.jpg
+- title: First time setup
+  slug: guides/mbed-org.html
+  description: Get up and running with your new device on mbed.org.
+  image: images/mbed-org-1.png
 
 - title: C++ crash course
   slug: guides/cpp-intro.html
   description: Introduction to C++ for the mbed developer
   image: images/cpp-banner.png
 
-- title: Bluetooth Low Energy Primer
-  slug: guides/ble-guide.html
-  description: Everything you need to know to get started with Bluetooth Low Energy.
-  image: images/bluetooth-primer.jpg
-
-- title: Using OS X Yosemite
-  slug: guides/mbed-yosemite.html
-  description: Work around some issues on OS X 10.10
-  image: images/mbed-yosemite.png
-
 - title: Print debugging
   slug: guides/serial.html
   description: Setting up print debugging on your PC
   image: images/coolterm-small.png
-
-- title: Autoflasher
-  slug: guides/autoflash.html
-  description: Reduce RSI and increase your productivity with this little gem!
-  image: images/autoflasher.png
 
 - title: How to import libraries
   slug: guides/mbed-import.html
   description: How to use other libraries in your mbed application.
   image: images/mbed-import-small.png
 
-- title: First time setup
-  slug: guides/mbed-org.html
-  description: Get up and running with your new device on mbed.org.
-  image: images/mbed-org-1.png
+- title: Bluetooth Low Energy Primer
+  slug: guides/ble-guide.html
+  description: Everything you need to know to get started with Bluetooth Low Energy.
+  image: images/bluetooth-primer.jpg
+
+- title: My mbed doesn't work
+  slug: guides/deadmbed.html
+  description: Common debugging tricks
+  image: images/debugging-square.jpg
+
+- title: Using OS X Yosemite
+  slug: guides/mbed-yosemite.html
+  description: Work around some issues on OS X 10.10
+  image: images/mbed-yosemite.png
 
 - title: Using LightBlue on iOS
   slug: guides/lightblue.html
@@ -48,3 +43,7 @@
   description: When you're prototyping Bluetooth Low Energy apps on an mbed, the easiest way to get started is by using the Puck library.
   image: images/pucklib-square.png
 
+- title: Autoflasher
+  slug: guides/autoflash.html
+  description: Reduce RSI and increase your productivity with this little gem!
+  image: images/autoflasher.png
