@@ -775,6 +775,94 @@ Løsningsforslag for oppgave 3 følger
 
 ---
 class: center, middle
+```cpp 
+#define LOG_LEVEL_INFO
+#include "Puck.h"
+
+Puck* puck = &Puck::getPuck();
+
+InterruptIn pb1(BUTTON1);
+InterruptIn pb2(BUTTON2);
+InterruptIn pb2(BUTTON3);
+InterruptIn pb2(BUTTON4);
+```
+---
+class: center, middle
+```cpp 
+uint8_t currentlyPushedButton = 0;
+
+void onButton1Pushed(void) {
+  currentlyPushedButton = 1;
+}
+
+void onButton2Pushed(void) {
+  currentlyPushedButton = 2;
+}
+
+/* and so on for button 3 and 4 */
+```
+---
+class: center, middle
+```cpp 
+const UUID SAMPLE_GATT_SERVICE = stringToUUID("bftj sample     ");
+const UUID SAMPLE_GATT_CHARACTERISTIC = stringToUUID("bftj sample char");
+```
+---
+class: center, middle
+```cpp 
+int main(void) {
+
+  pb1.rise(&onButton1Pushed);
+  pb1.enable_irq();
+
+  pb2.rise(&onButton2Pushed);
+  pb2.enable_irq();
+  
+  /* etc for 3 and 4 */
+```
+---
+class: center, middle
+```cpp 
+
+  // Add the Gatt characteristic
+  int characteristicValueLength = 1;
+  puck->addCharacteristic(
+  SAMPLE_GATT_SERVICE,
+  SAMPLE_GATT_CHARACTERISTIC,
+  characteristicValueLength,
+  GattCharacteristic::BLE_GATT_CHAR_PROPERTIES_READ |
+  GattCharacteristic::BLE_GATT_CHAR_PROPERTIES_NOTIFY);
+```
+---
+class: center, middle
+```cpp 
+  // Initialize the puck
+  puck->init(0xFEED);
+
+  // Set the initial value of the characteristic
+  uint8_t new_value = 0;
+  puck->updateCharacteristicValue(
+    SAMPLE_GATT_CHARACTERISTIC,
+    &new_value,
+    characteristicValueLength);
+```
+---
+class: center, middle
+```cpp 
+  while(puck->drive()) { 
+    if(currentlyPushedButton) {
+      puck->updateCharacteristicValue(
+        SAMPLE_GATT_CHARACTERISTIC,
+        &amp;currentlyPushedButton,
+        1);
+        LOG_INFO("button: %i\n", currentlyPushedButton);
+        currentlyPushedButton = 0;    
+      }
+    };
+  }
+```
+---
+class: center, middle
 
 # Takk til
 
