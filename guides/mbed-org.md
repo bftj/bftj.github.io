@@ -41,4 +41,4 @@ You should automatically be taken to mbed.org with a notification like this one:
 You have now successfully made an account on mbed.org, and have associated your development board hardware model with your account.
 This means that you are ready to start developing!
 
-Now you can check out the guide for [writing your first program](guides/first-program.html).
+Now you can check out the guide for [using the mbed compiler](guides/mbed-import.html).
