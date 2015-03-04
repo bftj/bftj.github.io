@@ -7,6 +7,8 @@ banner: images/mbed-import-banner.png
 
 This guide shows you how to import libraries into your projects in the [mbed compiler](guides/mbed-org.html).
 
+[Here is a direct link to the compiler where you write your mbed code](https://developer.mbed.org/compiler/).
+
 ## Create a new project
 
 In your compiler press the drop down arrow on the `New` button in the top left part of the compiler and select `New program`.
