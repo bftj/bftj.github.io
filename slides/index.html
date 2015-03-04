@@ -428,6 +428,9 @@ B-BLE til Android
 
 Koble til BLE-enheter, skriv/les til dem
 
+- det finnes flere apps som gjør dette, Nordic har en veldig bra en, men vi kan ikke bruke den fordi den kan ikke koble til ibeacons.
+- kan være verdt å teste ut flere apps fra app store/play store.
+
 ---
 class: center, middle
 
@@ -787,6 +790,43 @@ class: center, middle
 ---
 class: center, middle
 
+```cpp
+InterruptIn myButton(BUTTON1);
+
+...
+
+myButton.rise(&callback);
+myButton.enable_irq();
+```
+---
+class: center, middle
+
+```cpp
+int buttonHasBeenPressed = 0;
+
+void callback() {
+   buttonHasBeenPressed = 1; 
+}
+
+...
+
+while(puck->drive()) {
+  if(buttonHasBeenPressed) {
+    /* do stuff */
+    buttonHasBeenPressed = 0;
+  }
+}
+```
+
+???
+
+- bruk lite tid i interrupt-handleren
+- dette er en måte å bruke flagg på
+---
+class: center, middle
+
+# GATT Characteristic: notify
+
 ![](http://musically.com/wp-content/uploads/2012/07/sonic-notify.jpg)
 
 ???
@@ -806,6 +846,7 @@ puck central!
 
 - what is it?
 - why did we make it?
+- trenger det nå på android fordi ingen av inspector-appene støtter notify
 
 ---
 class: center, middle
