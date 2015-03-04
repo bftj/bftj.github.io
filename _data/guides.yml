@@ -52,3 +52,8 @@
   slug: guides/autoflash.html
   description: Reduce RSI and increase your productivity with this little gem!
   image: images/autoflasher.png
+
+- title: Puck Central
+  slug: guides/puckcentral.html
+  description: This image is of a cat
+  image: http://placekitten.com/g/150/150
