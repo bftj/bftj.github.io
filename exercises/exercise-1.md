@@ -1,5 +1,6 @@
 ---
 layout: guide
+banner: http://cdn.desktopwallpapers4.me/wallpapers/fantasy/1920x1200/2/17967-viking-ship-1920x1200-fantasy-wallpaper.jpg
 ---
 
 # Exercise 1

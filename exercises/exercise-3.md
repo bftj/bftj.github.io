@@ -1,5 +1,6 @@
 ---
 layout: guide
+banner: http://img0.mxstatic.com/wallpapers/cdfb93217b6e887c0485409ee5c50423_large.jpeg
 ---
 
 # Exercise 3
