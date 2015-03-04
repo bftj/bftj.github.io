@@ -20,7 +20,7 @@ We can create a single characteristic that holds the value `0` when no button is
 Set the characteristic to `NOTIFY` and `READ`.
 
 1. **Get a hold of the [Puck Central Android app](assets/puck-central.apk).**
-Ask us about this. We're going to use this app, since it supports notify.
+We're going to use this app, since it supports notify.
 Alternatively, LightBlue also supports notify.
 
 1. **Add rules to the Puck Central app that post to the Internet when notify is triggered**
