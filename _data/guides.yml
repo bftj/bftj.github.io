@@ -57,3 +57,9 @@
   slug: guides/puckcentral.html
   description: This image is of a cat
   image: http://placekitten.com/g/150/150
+
+- title: Buttons
+  slug: guides/buttons.html
+  description: Trigger events with buttons!
+  image: images/bigredbutton.jpg
+
