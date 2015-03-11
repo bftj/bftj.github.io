@@ -129,3 +129,13 @@ body.guide .container {
         }
     }
 }
+
+@media (max-width: 600px) {
+    body.frontpage h1 {
+        font-size: 40px;
+    }
+
+    .spotify-block {
+        display: none;
+    }
+}
