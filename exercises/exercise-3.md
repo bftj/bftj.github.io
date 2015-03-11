@@ -19,6 +19,19 @@ You can use [InterruptIn](http://developer.mbed.org/handbook/InterruptIn) to set
 We can create a single characteristic that holds the value `0` when no button is pressed, `1` when button 1 is pressed, `2` when button 2 is pressed, etc.
 Set the characteristic to `NOTIFY` and `READ`.
 
+The service ID should be `bftj cube       `, and the characteristic ID `bftj cube dirctn`.
+This causes the Puck Central phone app to think that your mbed is a "cube", which is the only thing it currently supports reacting to.
+The following is an overview of the numbers you can write to the characteristic, and their name in the app.
+
+Number | Name
+-------| -------------
+0      | Up
+1      | Down
+2      | Left
+3      | Right
+4      | Front
+5      | Back
+
 1. **Get a hold of the [Puck Central Android app](assets/puck-central.apk).**
 We're going to use this app, since it supports notify.
 Alternatively, LightBlue also supports notify.

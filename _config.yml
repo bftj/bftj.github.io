@@ -17,4 +17,4 @@ sass:
     # As well as your destination directory
 
 redcarpet:
-    extensions: ['with_toc_data']
+    extensions: ['with_toc_data', 'tables']
