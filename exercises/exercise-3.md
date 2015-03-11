@@ -32,7 +32,7 @@ Number | Name
 4      | Front
 5      | Back
 
-1. **Get a hold of the [Puck Central Android app](assets/puck-central.apk).**
+1. **Get a hold of the [Puck Central app](/guides/puckcentral.html).**
 We're going to use this app, since it supports notify.
 Alternatively, LightBlue also supports notify.
 
