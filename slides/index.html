@@ -855,6 +855,36 @@ puck central!
 - trenger det nå på android fordi ingen av inspector-appene støtter notify
 
 ---
+class: center
+
+# Puck Central
+
+### Lagd for å kommunisere med en "cube"
+
+#### service uuid
+```
+bftj cube
+```
+
+#### characteristic
+```
+bftj cube dirctn
+```
+
+???
+
+Hver UUID er 16 tegn, så det er spaces på slutten
+
+Direction characteristicen er 1 byte, og inneholder opprinnelig et tall fra 0-5.
+
+På telefonen betyr 0 up, 1 down etc.
+Dette står på nettsiden vår
+
+Bruk knapper og sett forskjellige verdier på characteristicen så kan telefonen reagere på det.
+
+Dette er litt hacky, men det fungerer.
+
+---
 class: center, middle
 
 # Oppgave 3
