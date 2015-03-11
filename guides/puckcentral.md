@@ -29,3 +29,6 @@ Each rule consists of when it should be triggered, and what to do when it is tri
 
 A more in-depth explanation of the apps is available at the [puck website](http://nordicsemiconductor.github.io/puck/tutorials/smartphone-apps.html).
 
+
+[GitHub source code for Android app](https://github.com/NordicSemiconductor/puck-central-android).
+[GitHub source code for iOS app](https://github.com/NordicSemiconductor/puck-central-ios).
