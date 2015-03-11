@@ -15,7 +15,9 @@ Read more about the app on the [Puck Website](http://nordicsemiconductor.github.
 
 To get Puck Central for iOS, first get your [iPhone's UDID](http://get.udid.io/).
 
-Then give it to us in [this form](https://docs.google.com/forms/d/1Ji7RRTxRyeJ8v_YdgdeViybuWxAuY2qgJ6nR7kZ-PrE/viewform?usp=send_form). We will later provide a link to download the app for you.
+Then give it to us in [this form](https://docs.google.com/forms/d/1Ji7RRTxRyeJ8v_YdgdeViybuWxAuY2qgJ6nR7kZ-PrE/viewform?usp=send_form).
+If you have already done this, you can download the app (on your phone) here:
+[iOS Puck Central Download](/ios/).
 
 # Using Puck Central
 
