@@ -7,7 +7,7 @@ banner: images/coolterm-banner.png
 
 To know what your mbed is up to, it is very useful to be able to log output to a terminal on your computer.
 
-How to do the printing on the mbed is explained in the [c++ guide](guides/cpp-intro.html#printing-in-mbed-c++).
+How to do the printing on the mbed is explained in the [c++ guide](guides/cpp-intro.html#printing-in-mbed-c).
 This guide will walk you through how to set up the required software on your computer.
 
 ## Windows
