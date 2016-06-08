@@ -1,6 +1,6 @@
 ---
 layout: guide
-banner: http://placekitten.com/g/750/350
+banner: https://placekitten.com/g/750/350
 ---
 
 # Puck Central
