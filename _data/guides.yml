@@ -56,7 +56,7 @@
 - title: Puck Central
   slug: guides/puckcentral.html
   description: This image is of a cat
-  image: http://placekitten.com/g/150/150
+  image: https://placekitten.com/g/150/150
 
 - title: Buttons
   slug: guides/buttons.html
